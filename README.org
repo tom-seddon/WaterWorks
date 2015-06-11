@@ -5,9 +5,11 @@ An antique executive toy for Windows.
 I've ramped up some of the numbers to make it take better advantage of
 modern PCs.
 
-** Install
+** Running
 
-Download [[bin/waterworks.exe][=bin/waterworks.exe=]] and run it.
+There's a prebuilt binary in the =bin= folder.
+
+The source can be built with Visual Studio 2013.
 
 ** What
 
