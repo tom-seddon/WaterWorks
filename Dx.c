@@ -32,7 +32,7 @@ static IDirectDraw2 *ddraw_object=0;
 		}\
 		} __pragma(warning(push)) __pragma(warning(disable:4127)) while(0) __pragma(warning(pop))
 #else
-#define DXCALL(K) do{if(FAILED(K)){return 0;}}while(0)
+#define DXCALL(K) do{if(FAILED(K)){return 0;}}__pragma(warning(push)) __pragma(warning(disable:4127)) while(0) __pragma(warning(pop))
 #endif
 /*
 	IDirectDraw2 *dx_ddraw(void)
