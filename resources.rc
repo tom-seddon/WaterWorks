@@ -1,0 +1,314 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+PROGICON                ICON    DISCARDABLE     "icon1.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+ID_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New...",                     ID_F__KING_DEVSTUDIO
+        MENUITEM SEPARATOR
+        MENUITEM "Rese&t\tCtrl+T",              ID_FILE_RESET
+        MENUITEM "&Erase\tCtrl+E",              ID_FILE_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Run\tCtrl+R",                ID_TOOLS_RUN
+        MENUITEM "&Pause\tCtrl+P",              ID_TOOLS_PAUSE
+        POPUP "Brush size"
+        BEGIN
+            MENUITEM "1",                           IDA_BRUSH1
+            MENUITEM "2",                           IDA_BRUSH2
+            MENUITEM "3",                           IDA_BRUSH3
+            MENUITEM "4",                           IDA_BRUSH4
+            MENUITEM "5",                           IDA_BRUSH5
+        END
+        POPUP "Brush colour"
+        BEGIN
+            MENUITEM "Green\tCtrl+G",               IDA_BRUSHGREEN
+            MENUITEM "Black\tCtrl+B",               IDA_BRUSHBLACK
+            MENUITEM "Yellow\tCtrl+Y",              IDA_BRUSHYELLOW
+        END
+        POPUP "Zoom"
+        BEGIN
+            MENUITEM "1 x 1\tAlt+1",                IDA_ZOOM1
+            MENUITEM "2 x 2\tAlt+2",                IDA_ZOOM2
+            MENUITEM "3 x 3\tAlt+3",                IDA_ZOOM3
+        END
+        MENUITEM "Save droplet data",           ID_TOOLS_SAVEDROPLETDATA
+        , GRAYED
+        MENUITEM "&Fill\tCtrl+F",               ID_TOOLS_FILL
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Stretch image",               ID_OPTIONS_STRETCHIMAGE
+        , GRAYED
+        MENUITEM "Popup menu",                  ID_TOOLS_POPUPMENU, GRAYED
+        MENUITEM "&View bucket\tSpace",         IDA_TOGGLEBUCKET
+        MENUITEM "Assembler version",           ID_OPTIONS_ASSEMBLERVERSION
+        , GRAYED
+    END
+    POPUP "&Help", HELP
+    BEGIN
+        MENUITEM "&View README...",             ID_HELP_VIEWREADMETXT
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RESIZE DIALOG DISCARDABLE  0, 0, 167, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resize"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,68,50,14
+    LTEXT           "New width",IDC_STATIC,5,5,58,18,SS_CENTERIMAGE
+    LTEXT           "New height",IDC_STATIC,5,25,55,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_NEW_WIDTH,75,5,40,15,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NEW_HEIGHT,75,25,40,15,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Current contents",IDC_STATIC,5,45,55,15,SS_CENTERIMAGE | 
+                    WS_DISABLED
+    COMBOBOX        IDC_CURRENT_CONTENTS,75,45,85,40,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_RESIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    "1",            IDA_BRUSH1,             VIRTKEY, NOINVERT
+    "1",            IDA_ZOOM1,              VIRTKEY, ALT, NOINVERT
+    "2",            IDA_BRUSH2,             VIRTKEY, NOINVERT
+    "2",            IDA_ZOOM2,              VIRTKEY, ALT, NOINVERT
+    "3",            IDA_BRUSH3,             VIRTKEY, NOINVERT
+    "3",            IDA_ZOOM3,              VIRTKEY, ALT, NOINVERT
+    "4",            IDA_BRUSH4,             VIRTKEY, NOINVERT
+    "5",            IDA_BRUSH5,             VIRTKEY, NOINVERT
+    "B",            IDA_BRUSHCOLOUR,        VIRTKEY, NOINVERT
+    "B",            IDA_BRUSHBLACK,         VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_COPY,                VIRTKEY, CONTROL, NOINVERT
+    "D",            IDA_DEBUG_STATUS,       VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_FILE_CLEAR,          VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_TOOLS_FILL,          VIRTKEY, CONTROL, NOINVERT
+    "G",            IDA_BRUSHGREEN,         VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_TOOLS_PAUSE,         VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_TOOLS_RUN,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_FILE_RESET,          VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_TOOLS_PLUG,          VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_PASTE,               VIRTKEY, CONTROL, NOINVERT
+    VK_SPACE,       IDA_TOGGLEBUCKET,       VIRTKEY, NOINVERT
+    "Y",            IDA_BRUSHYELLOW,        VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,21,0,0
+ PRODUCTVERSION 1,21,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "Based on an original program by Mark Sidey (BBC Acorn User, March 1992)\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Water Works for Windows\0"
+            VALUE "FileVersion", "1.21\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000 by Tom Seddon <T.W.Seddon@ecosse.net>\0"
+            VALUE "OriginalFilename", "\0"
+            VALUE "ProductName", "Water Works\0"
+            VALUE "ProductVersion", "1.21\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUT_INFO          "Water Works\nan executive toy\nBy Tom Seddon <T.W.Seddon@ecosse.net>"
+    IDS_ZOOM_MSG            "Zoom factor now %d x %d"
+    IDS_CORNER_POS_MSG      "Corner position is (%d,%d)"
+    IDS_BRUSH_SIZE_MSG      "Brush size is %d"
+    IDS_BLACK_NAME          "black"
+    IDS_GREEN_NAME          "green"
+    IDS_BROWN_NAME          "yellow"
+    IDS_BRUSH_COL_MSG       "Brush colour is %s"
+    IDS_ABOUT_INFO_TITLE    "About Water Works"
+    IDS_DROPLETDATAFILE     "droplets.txt"
+    IDS_NO_SURFACES_MSG     "Couldn't create surfaces"
+    IDS_ERROR_TITLE         "Problem"
+    IDS_BAD_DDRAW_1         "Water Works is suspended."
+    IDS_BAD_DDRAW_2         "Normal service will resume as soon as possible."
+    IDS_BUCKET_INCLUDED     "Bucket included in view"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUCKET_EXCLUDED     "Bucket excluded from view"
+    IDS_PLUG_ON             "Plug present"
+    IDS_PLUG_OFF            "Plug not present"
+    IDS_WINDOW_TITLE        "Water Works"
+    IDS_YESSTRETCH          "Image stretching enabled"
+    IDS_NOSTRETCH           "Image stretching disabled"
+    IDS_BADBITDEPTH         "Please change the bit depth (number of colours)\nof your desktop."
+    IDS_BUSY                "Water Works is busy"
+    IDS_DDRAW_ERROR_MSGBOX1 "A graphics problem occurred:\n\n"
+    IDS_DDRAW_ERROR_MSGBOX2 "\n\nWater Works will be suspended until it is resolved."
+    IDS_CONTENTS_RESIZE     "Resize"
+    IDS_CONTENTS_DISCARD    "Discard"
+    IDS_CONTENTS_PRESERVE   "Preserve"
+    IDS_CONTENTS_CENTRE     "Centre"
+    IDS_RESIZE_INVALID      "Width and/or height don't appear to be numbers. Select Retry to edit again, or Cancel to ignore."
+    IDS_RESIZE_INVALID_TITLE "Invalid resize details"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RESIZE_TOOSMALL     "One or both axes is or are too small. The minimum width is %d and the minimum height is %d. Retry to edit again, or Cancel to ignore."
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
