@@ -3,8 +3,6 @@
 	Water Works
 	===========
 
-	Tom Seddon <T.W.Seddon@ecosse.net>
-
 */
 #include <process.h>
 #include <windows.h>
@@ -34,8 +32,8 @@
 //#define NUM_DROPLETS (15129)
 
 /* For now, this prevents all sorts of problems. */
-#define MIN_AREA_WIDTH (320)
-#define MIN_AREA_HEIGHT (200)
+#define MIN_AREA_WIDTH (640)
+#define MIN_AREA_HEIGHT (400)
 
 /* if #defined the message loop will eat all messages before doing anything else. otherwise, it will
    eat them one at a time. Without GREEDY_MESSAGE_LOOP seems to work a little better. */
@@ -1031,9 +1029,9 @@ static void defaults(stuff_t *stuff) {
 	stuff->num_drops=0;
 	stuff->drops=0;
 	stuff->pitch=0;
-	stuff->area_width=320;
+	stuff->area_width=MIN_AREA_WIDTH;
 	stuff->area_height=400;
-	stuff->view_width=320;
+	stuff->view_width=MIN_AREA_WIDTH;
 	stuff->view_height=400;
 	stuff->stretch_image=0;
 
