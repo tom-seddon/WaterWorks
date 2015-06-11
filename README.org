@@ -1,0 +1,60 @@
+* waterworks
+
+An antique executive toy for Windows.
+
+I've ramped up some of the numbers to make it take better advantage of
+modern PCs.
+
+** Install
+
+Download [[bin/waterworks.exe][=bin/waterworks.exe=]] and run it.
+
+** What
+
+Amuse yourself by guiding a sort of sand-/water-like substance into
+conduits, pipes and siphons.
+
+** Requirements
+
+Windows.
+
+** Instructions
+
+Draw lines on the screen, then let the droplets flow over your
+creation.
+
+To draw, left drag on the window, holding Ctrl to draw horizontal
+lines or Shift to draw vertical lines. Change brush size using
+=Tools=|=Brush size=, and change brush colour (see below) using
+=Tools=|=Brush colour=.
+
+To erase the world, use =File=|=Erase=; to fill it with yellow, use
+=Tools=|=Fill|.
+
+Use =Tools=|=Zoom= to zoom in for a closer look.
+
+=Tools=|=Run= sets the substance running, =Tools=|=Pause= will pause
+it temporarily, and =File=|=Reset= resets it.
+
+Initially, and after a reset, the substance lives in a bucket above
+the drawable area - use =Options|View bucket= to toggle its
+visibility. (You can use the scroll bar to see it if the window isn't
+tall enough.)
+
+** Colours
+
+Water is blocked by yellow surfaces.
+
+If a droplet is on a green surface, it will move left if it is red or
+right if it is blue. If you're careful, you can separate the colours
+out this way.
+
+** Known problems
+
+- Speed limiting is a bit ropey on my PC.
+
+- The display scaling is incorrect. It's very slightly off. I don't
+  know if this is a new thing, or (more likely) that I just couldn't
+  tell when I was working on a CRT...
+
+- Flickery message text.
